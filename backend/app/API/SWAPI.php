@@ -97,9 +97,6 @@ class SWAPI
 
 	private function getAsync($url, &$prop)
 	{
-		//get async promise
-		$promise = $this->client->getAsync($url);
-
 		//if already have async item in queue
 		if (isset($this->async_queue[$url])) {
 			//add prop as target for that item
@@ -107,6 +104,7 @@ class SWAPI
 		}
 		//else add new async item to queue
 		else {
+			$promise = $this->client->getAsync($url);
 			$asyncItem = new AsyncItem($promise, $url, $this->async_queue);
 			$asyncItem->addTarget($prop);
 			$this->async_queue += array($url => $asyncItem);
