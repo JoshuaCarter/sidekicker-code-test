@@ -8,7 +8,7 @@ This is my submission for the sidekicker developer coding test.
 I had two primary goals with this project:
 
 1) Create a good user experience (presentable UI, no confusion, pagination, etc).
-2) Resolve all SWAPI queries on the backend *before* sending anything to the frontend. Thus the backend performs numerous async requests for data before sending it back to the fronend (e.g. gets the name of homeworlds, movies, etc, and combines them with the person's data before sending a response to frontend).
+2) Resolve all SWAPI queries on the backend *before* sending anything to the frontend. Thus the backend performs numerous async requests for data before sending it back to the fronend (e.g. gets the name of homeworlds, movies, etc, and combines them with the person's data before sending a response to the frontend).
 
 I hope that I have achieved this, though so much of the subject matter in this project is new to me, that I'm hardly confident in my work.
 
