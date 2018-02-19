@@ -105,7 +105,7 @@ class SWAPI
 		//else add new async item to queue
 		else {
 			$promise = $this->client->getAsync($url);
-			$asyncItem = new AsyncItem($promise, $url, $this->async_queue);
+			$asyncItem = new AsyncItem($url, $promise, $this->async_queue);
 			$asyncItem->addTarget($prop);
 			$this->async_queue += array($url => $asyncItem);
 		}
@@ -114,17 +114,18 @@ class SWAPI
 
 class AsyncItem
 {
+	//target url props to change to name from url data
 	private $targets = [];
+	//promise to wait for
 	private $promise = null;
+	//url (key) and ref to queue so can remove self when done
 	private $url = '';
 	private $queue = null;
 
-	public function __construct(&$promise, $url, &$queue)
+	public function __construct($url, &$promise, &$queue)
 	{
 		$this->url = $url;
 		$this->queue = &$queue;
-		
-		//store promise
 		$this->promise = &$promise;
 	}
 
@@ -155,13 +156,9 @@ class AsyncItem
 			$name = $data['title'];
 		}
 
+		//replace target props with name
 		for ($i = 0; $i < count($this->targets); $i++) {
 			$this->targets[$i] = $name;
-		}
-
-		//update target props
-		foreach ($this->targets as &$t) {
-			$t = $name;
 		}
 	}
 }
