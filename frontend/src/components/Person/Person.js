@@ -88,7 +88,7 @@ class Person extends Component {
 			//output each prop as table row
 			output.push(
 				<tr key={d} style={{ borderBottom: '1px solid #DFDFDF' }}>
-					<td className="align-top pr-5"><strong>{name}:</strong></td>
+					<td style={{ width: '50%' }} className="align-top pr-5"><strong>{name}:</strong></td>
 					<td>{value}</td>
 				</tr>
 			);
