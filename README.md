@@ -36,7 +36,7 @@ Used locally for my familiarity with it.
 - Begin execution of your preferred virtual server software (I use WAMP).
 - Ensure that Apache and PHP >= 7x are running.
 - Pull the `kickstarter-code-test` folder into the `www` / `htdocs` folder.
-- Run `kickstarter-code-test/init.sh`. This will run `composer install` on the backend, `npm install` on the frontend, and build the react project.
+- Run `kickstarter-code-test/init.sh`. This will run `composer install` on the backend, `npm install` on the frontend, and build the react project using `npm run build`.
 - Run `kickstarter-code-test/serve_lumen.sh`. This will serve the lumen project with PHP's built-in server.
 - Run `kickstarter-code-test/serve_react.sh`. This will serve the react production build with npm.
 - Your browser should automatically open a new tab and navigate to the react build on `localhost:3000`.
