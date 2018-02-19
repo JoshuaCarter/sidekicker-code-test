@@ -11,7 +11,7 @@
 |
  */
 
-require '../app/API/SWAPI.php';
+require_once '../app/API/SWAPI.php';
 
 use App\API\SWAPI;
 
