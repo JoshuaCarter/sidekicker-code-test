@@ -1,0 +1,40 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"compounds": [
+		{
+			"name": "Debug",
+			"configurations": [
+				"Lumen in Chrome",
+				"Attach XDebug",
+				"React in Chrome",
+			]
+		}
+	],
+	"configurations": [
+		{
+			"name": "Lumen in Chrome",
+			"type": "chrome",
+			"request": "launch",
+			"url": "http://localhost:8000",
+			"webRoot": "${workspaceRoot}",
+			"preLaunchTask": "php-serve-lumen",
+		},
+		{
+			"name": "React in Chrome",
+			"type": "chrome",
+			"request": "launch",
+			"url": "http://localhost:3000",
+			"webRoot": "${workspaceRoot}",
+			"preLaunchTask": "npm-serve-react",
+		},
+		{
+			"name": "Attach XDebug",
+			"type": "php",
+			"request": "launch",
+			"port": 9000,
+		}
+	]
+}
