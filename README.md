@@ -28,9 +28,6 @@ I opted to use a styling framework for this project for presentation's sake, and
 ##### Lumen (PHP) and Guzzle
 I chose to learn and use Lumen as it was the first suggestion in the project specs. Guzzle was used for http requests to the SWAPI.
 
-##### WAMP
-Used locally for my familiarity with it.
-
 ---
 ## Running the Production Build
 - Pull this repo wherever you like.
