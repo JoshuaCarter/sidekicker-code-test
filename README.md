@@ -12,7 +12,7 @@ I had two primary goals with this project:
 
 I hope that I have achieved this, though so much of the subject matter in this project is new to me, that I'm hardly confident in my work.
 
-This is the first time I have used React, Laravel/Lumen, Guzzle, and the second time I have user Bootstrap. As a result, this was a sizeable undertaking for me, ultimately taking me ~30-40 hrs to complete.
+This is the first time I have used React, Laravel/Lumen, Guzzle, and the second time I have user Bootstrap. As a result, this was a sizeable undertaking for me, ultimately taking me ~30 hrs to complete.
 
 Regrettably, and despite coding like a mad-man over the weekend (24 hrs straight on Sunday x_x), I haven't had enough time to delve into testing, a subject which is also fairly new to me.
 
