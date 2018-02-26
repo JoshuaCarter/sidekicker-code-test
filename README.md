@@ -8,7 +8,7 @@ This is my submission for the sidekicker developer coding test.
 I had two primary goals with this project:
 
 1) Create a good user experience (presentable UI, no confusion, pagination, etc).
-2) Resolve all SWAPI queries on the backend *before* sending anything to the frontend. Thus the backend performs numerous async requests for data before sending it back to the frontend (i.e. I get a page of people, then fetch the name of homeworlds, movies, etc, via further async calls to SWAPI, and *then* send the data back to the frontend).
+2) Resolve all SWAPI queries on the backend *before* sending anything to the frontend. Thus the backend performs numerous async requests for data (i.e. I get a page of people, use that to send async requests for the name of homeworlds, movies, etc, and *then* send the data back to the frontend).
 
 This is the first time I have used React, Laravel/Lumen, Guzzle, and the second time I have used Bootstrap. As a result, this was a sizeable undertaking for me, ultimately taking me ~30 hrs to complete.
 
